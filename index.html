@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOCALSTORAGE</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .parent{
+            background-color: #ccc;
+            width: 450px;
+            padding: 20px;
+            margin: 40px auto;
+        }
+
+       #input{
+            border: none;
+            padding: 15px;
+            margin-bottom:15px;
+            width: 100%;
+        }
+        
+        #input:focus{
+            outline: 1px solid blue;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn {
+            background-color: aliceblue;
+            border: none;
+            color: chocolate;
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+        .results{
+            background-color: rgb(245, 246, 248);
+            padding: 15px;
+            margin-top:15px;
+            width: 100%;
+            text-align: center;
+            color: black;
+        }
+
+    .red{
+        color: red;
+    }
+
+    .green{ 
+        color: green;
+        font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Local Storage</h1>
+    <div class="parent">
+        <input type="text" id="input" placeholder="local Storage">
+        <div class="buttons">
+            <button class="btn check-item">Check Item</button>
+            <button class="btn add-item">Add Item</button>
+            <button class="btn delete-item">Delete Item</button>
+            <button class="btn show-item">Show item</button>
+        </div>
+        <div class="results">
+            <span>Results Here</span>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
